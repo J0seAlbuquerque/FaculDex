@@ -1,0 +1,39 @@
+ /* Definindo as cores da marca e fonte padrão */
+        :root {
+            --cor-primaria: #47566E; /* Azul-acinzentado escuro */
+            --cor-acento: #E7C684;   /* Dourado/Bege */
+        }
+        /* Ajuste para garantir que o app preencha a tela em webviews */
+        html, body {
+            height: 100%;
+            -webkit-tap-highlight-color: transparent; /* Remove o highlight azul ao tocar em links/botões */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Um cinza bem claro para o fundo */
+        }
+        /* Esconder scrollbar */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* Estilos customizados com as cores da marca */
+        .bg-primaria { background-color: var(--cor-primaria); }
+        .text-primaria { color: var(--cor-primaria); }
+        .bg-acento { background-color: var(--cor-acento); }
+        .text-acento { color: var(--cor-acento); }
+        .border-acento { border-color: var(--cor-acento); }
+        .ring-acento:focus { --tw-ring-color: var(--cor-acento) !important; }
+        .focus\:border-acento:focus { border-color: var(--cor-acento) !important; }
+
+        /* Animação para a transição das telas */
+        .screen {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Estilo para o modal */
+        #modal-overlay.hidden, #modal.hidden {
+            display: none;
+        }
