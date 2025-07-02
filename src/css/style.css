@@ -1,6 +1,6 @@
  /* Definindo as cores da marca e fonte padrão */
         :root {
-            --cor-primaria: #e94f21; /* Azul-acinzentado escuro */
+            --cor-primaria: #47566E; /* Azul-acinzentado escuro */
             --cor-acento: #E7C684;   /* Dourado/Bege */
         }
         /* Ajuste para garantir que o app preencha a tela em webviews */
